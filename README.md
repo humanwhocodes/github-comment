@@ -16,7 +16,7 @@ You must have Node.js to use this package.
 
 Next, define your environment variable:
 
-* `GITHUB_TOKEN` - your GitHub access token
+* `GITHUB_TOKEN` - your GitHub access token. Make sure you have at least the `public_repo` scope to allow commenting on both issues and pull requests.
 
 The CLI will not work without this environment variable.
 
