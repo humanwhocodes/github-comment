@@ -30,13 +30,13 @@ if (process.env.GHC_DOTENV === "1") {
  * Command line arguments will escape \n as \\n, which isn't what we want.
  * Remove the extra escapes so newlines can be entered on the command line.
  */
-const message = process.argv[2].replace(/\\n/g, "\n");
+const message = process.argv[3].replace(/\\n/g, "\n");
 
 //-----------------------------------------------------------------------------
 // Main
 //-----------------------------------------------------------------------------
 
-comment(message, process.env)
+comment(process.argv[2], message, process.env)
     .then(response => console.log(JSON.stringify(response, null, 2)))
     .catch(error => {
         if (error.message) {
