@@ -1,6 +1,6 @@
 {
   "name": "@humanwhocodes/github-comment",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A CLI for commenting on GitHub issues and pull requests",
   "bin": "dist/bin.cjs.js",
   "files": [
