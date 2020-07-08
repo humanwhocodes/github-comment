@@ -2,7 +2,7 @@
 
 by [Nicholas C. Zakas](https://humanwhocodes.com)
 
-![Node CI](https://github.com/nitpik/toolkit/workflows/Node%20CI/badge.svg)
+![Node CI](https://github.com/humanwhocodes/github-comment/workflows/Node%20CI/badge.svg)
 
 If you find this useful, please consider supporting my work with a [donation](https://humanwhocodes.com/donate).
 
@@ -23,10 +23,10 @@ The CLI will not work without this environment variable.
 Then, you can run the CLI and pass a message on the command line using `npx`:
 
 ```
-$ npx @humanwhocodes/github-comment org/repo#1234 "Hello from the command line!"
+$ npx @humanwhocodes/github-comment owner/repo#1234 "Hello from the command line!"
 ```
 
-Where `org/repo#1234` is the issue or pull request that you'd like to comment on.
+Where `owner/repo#1234` is the issue or pull request that you'd like to comment on.
 
 ### Testing with dotenv
 
@@ -45,7 +45,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: 'npx @humanwhocodes/github-comment org/repo#1234 "Your comment text"'
+      - run: 'npx @humanwhocodes/github-comment owner/repo#1234 "Your comment text"'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
